@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <h1>JavaScript Playground</h1>
+        <p>Where magic happens ✨</p>
+    </header>
+
+    <main class="container">
+        <!-- Event Handling Section -->
+        <section class="card" id="event-section">
+            <h2>Event Handling</h2>
+            
+            <div class="event-box" id="click-box">
+                <p>Click me!</p>
+            </div>
+            
+            <div class="event-box" id="hover-box">
+                <p>Hover over me!</p>
+            </div>
+            
+            <div class="event-box" id="keypress-box">
+                <p>Press any key while focused!</p>
+            </div>
+            
+            <div class="event-box" id="secret-box">
+                <p>Double-click or long press me!</p>
+            </div>
+        </section>
+
+        <!-- Interactive Elements -->
+        <section class="card" id="interactive-section">
+            <h2>Interactive Elements</h2>
+            
+            <div class="color-changer">
+                <button id="color-btn">Change My Color!</button>
+                <span id="color-text">I change colors!</span>
+            </div>
+            
+            <div class="gallery">
+                <div class="gallery-container">
+                    <img src="https://images.pexels.com/photos/30876390/pexels-photo-30876390/free-photo-of-delicious-multi-grain-bread-with-toppings-in-artistic-still-life.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Gallery image" class="active">
+                    <img src="https://www.pexels.com/photo/pancake-with-sliced-strawberry-376464/" alt="Gallery image">
+                    <img src="https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Gallery image">
+                </div>
+                <div class="gallery-controls">
+                    <button id="prev-btn">← Previous</button>
+                    <button id="next-btn">Next →</button>
+                </div>
+            </div>
+            
+            <div class="tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+                    <button class="tab-btn" data-tab="tab2">Tab 2</button>
+                    <button class="tab-btn" data-tab="tab3">Tab 3</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab1">
+                        <h3>First Tab Content</h3>
+                        <p>This is the content for tab 1.</p>
+                    </div>
+                    <div class="tab-pane" id="tab2">
+                        <h3>Second Tab Content</h3>
+                        <p>Here's some different content for tab 2.</p>
+                    </div>
+                    <div class="tab-pane" id="tab3">
+                        <h3>Third Tab Content</h3>
+                        <p>And finally, tab 3 has its own content.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Validation -->
+        <section class="card" id="form-section">
+            <h2>Form Validation</h2>
+            
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="name">Name*</label>
+                    <input type="text" id="name" required>
+                    <div class="error-message" id="name-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" required>
+                    <div class="error-message" id="email-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password* (min 8 chars)</label>
+                    <input type="password" id="password" required minlength="8">
+                    <div class="error-message" id="password-error"></div>
+                    <div class="password-strength">
+                        <span class="strength-bar"></span>
+                        <span class="strength-text"></span>
+                    </div>
+                </div>
+                
+                <button type="submit">Sign Up</button>
+                <div id="form-success" class="success-message"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with ❤️ and JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
